@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fale Conosco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="imagens/icones/icone1.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="imagens/icones/icone2.ico" type="image/x-icon"/>
+</head>
+<body>
+    <section id="fundo" class="row">
+        <img class="col-12" src="imagens/logo-moradas.jpg" alt="moradas-do-bosque-logo"/>
+        <form class="col-12" method="POST" action="php/formulario.php" id="formulario_moradas">
+            <input class="col-12" type="text" name="nome" placeholder="Seu nome: " required/>
+            <input class="col-12" type="email" name="de" placeholder="seu email:" required/>
+            <br/>
+            <input class="col-12" type="text" name="assunto" placeholder="assunto:"/>
+            <br/>
+            <input class="col-12" type="tel" name="telefone" min="8" placeholder="Telefone completo: " required/>
+            <h1 id="titulo" class="col-12">Com quem quer falar?</h1>
+            
+            <div id="separador" class="col-12">
+            <p class="col-6 atendimento">Atendimento</p>
+            <input class="col-6 check" type="checkbox" name="atendimento" checked/>
+            </div>
+            
+            <div id="separador" class="col-12">
+            <p class="col-6 atendimento">sindica</p>
+            <input class="col-6 check" type="checkbox" name="sindica"/>
+            </div>
+            <textarea class="col-12" name="msg" rows="5" cols="20" placeholder="Sua mensagem aqui" form="formulario_moradas"></textarea>
+            <br/>
+            <input class="col-12" type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>

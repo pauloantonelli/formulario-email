@@ -1,0 +1,107 @@
+@charset "utf8";
+*{
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    width: 100%;
+}
+@media only screen and (min-width: 320px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+[class*="col-"]{
+    float: left;
+    padding: 20px;
+    margin: 5px 0;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+html{
+    background-image: url("../imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    height: 110%;
+    background-position: center;
+    background-size: cover;
+}
+input{
+    font-weight: bold;
+}
+textarea{
+    font-weight: bold;
+}
+#titulo{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+#separador{
+    width: 100%;
+    background-color: black;
+}
+#separador-obrigado{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 150px;
+}
+.atendimento{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin: 0px 20%;
+    padding: 0px;
+    width: 10%;
+}
+.atendimento-obrigado ,h1, h2, h3{
+    top: 0;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: black;
+}
+.check{
+    margin: 9px 0;
+    padding: 0;
+    
+}
+@media only screen and (max-width: 768px){
+    img{
+        max-width: 50%;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        margin: 0;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 768px){
+    img{
+        max-width: 15%;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        margin: 0;
+        padding: 0;
+    }   
+}

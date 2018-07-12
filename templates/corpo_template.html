@@ -1,0 +1,80 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Email de $nome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @charset "utf8";
+        * {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+            width: 100%;
+        }
+        @media only screen and (min-width: 320px) {
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        h1{
+            font-size: 1em;
+        }
+        section{
+            background-color: yellowgreen;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="row">
+        <h1 class="col-12" id="nome">Nome: $nome</h1>
+        <h1 class="col-12" id="email">Email: $de</h1>
+        <h1 class="col-12" id="telefone">Telefone: $tel</h1>
+        <h1 class="col-12" id="mensagem">Mensagem: $msg</h1>
+        <h1 class="col-12" id="data_envio">Enviado em: $data_envio $hora_envio</h1>
+    </section>
+</body>
+</html>
