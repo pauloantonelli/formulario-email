@@ -1,2 +1,2 @@
 # formulario-email
-formulario em html responsivado que dispara email html com layout responsivo em um sistema php simples e leve.
+sistema web em php 7 que dispara email contendo o que foi inserido no formulario. O template do email é em html responsivo.
